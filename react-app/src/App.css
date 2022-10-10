@@ -1,0 +1,145 @@
+body {
+  background-color: #E5E5E5;
+}
+
+img {
+  position: absolute;
+  width: 240px;
+  height: 55px;
+  left: 73px;
+  top: 55px;
+}
+
+.title {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 75px;
+margin-top: 120px;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #36476D;
+}
+
+h1 {
+  /*justify-content: center;
+  align-items: center; */
+  margin-left: 5rem;
+
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 75px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #36476D;
+
+}
+
+.email {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: lighter;
+font-size: 25px;
+line-height: 75px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #828EA6;
+}
+
+.block {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 15px;
+  background-color: #AFD7FA;
+}
+.white {
+  display: flex;
+  width: 260px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.red {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 15px;
+  background-color: #FF7676;
+}
+.green {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #56C854;
+}
+
+.source {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.space-white {
+  margin-bottom: 10px;   
+}
+
+h2 {
+  width: 232px;
+  height: 50px;
+  left: 112px;
+  top: 292px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+}

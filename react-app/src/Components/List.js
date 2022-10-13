@@ -1,25 +1,24 @@
 
-const sourceList = [{sourceName:"Presbo", sourceEmail: "presbo@columbia.edu"}, 
-                    {sourceName:"John Jay Mouse", sourceEmail: "mouse@columbia.edu"}, 
-                    {sourceName:"Water Bottle Man", sourceEmail: "flipper@columbia.edu"}]
 
-function List() {
+
+
+function List({sourceList, handleDelete}) {
     return (
         <div class="List">
-            {sourceList.map((source, index) => (<ListItem index = {index+1} sourceName={source.sourceName} sourceEmail={source.sourceEmail}/>))}
+            {sourceList.map((source, index) => (<ListItem index = {index+1} sourceName={source.sourceName} sourceEmail={source.sourceEmail} handleDelete={handleDelete}/>))}
         </div>
     );
 }
 
 export default List;
 
-function ListItem({index, sourceName, sourceEmail}) {
+function ListItem({index, sourceName, sourceEmail, handleDelete}) {
     return (
         <div class="source">
             <h1>{index}</h1>
             <h1>{sourceName}</h1>
             <h1 class="email">{sourceEmail}</h1>
-            <div class="red">
+            <div class="red" onClick={() => handleDelete(index)}>
                 <h2>DELETE</h2>
             </div>
         </div>

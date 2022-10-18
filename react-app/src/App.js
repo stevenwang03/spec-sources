@@ -11,23 +11,25 @@ const initialList = [{sourceName:"Presbo", sourceEmail: "presbo@columbia.edu"},
 function App() {
   const [sourceList, setSourceList] = useState(initialList);
 
+  function handleAdd(sourceTitle, sourceEmail) {
+    //const updatedList = sourceList.concat([{sourceName: sourceTitle, sourceEmail: sourceEmail}])
+    const updatedList = [...sourceList, {sourceName: sourceTitle, sourceEmail: sourceEmail}]
+    setSourceList(updatedList);
+  }
+
   function handleDelete(index) {
     const updatedList = sourceList.slice(0, index - 1).concat(sourceList.slice(index));
 
     setSourceList(updatedList);
   }
-
-  function handleAdd() {
-
-  }
   
   return (
-    <><div class="logo">
+    <><div>
       <img src="https://clubs-cu.s3.amazonaws.com/Spectator+Publishing+Logo.png"></img>
     </div><div>
         <h1 class="title">Spectator's Sources</h1>
 
-      <Block/>
+      <Block handleAdd={handleAdd}></Block>
       
       </div>
       <div class="space-white">

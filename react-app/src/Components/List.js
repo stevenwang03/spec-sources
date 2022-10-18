@@ -18,9 +18,9 @@ function ListItem({index, sourceName, sourceEmail, handleDelete}) {
             <h1>{index}</h1>
             <h1>{sourceName}</h1>
             <h1 class="email">{sourceEmail}</h1>
-            <div class="red" onClick={() => handleDelete(index)}>
+            <button class="red" onClick={() => handleDelete(index)}>
                 <h2>DELETE</h2>
-            </div>
+            </button>
         </div>
     );
 }

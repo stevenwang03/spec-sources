@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 // WRITE THE SCHEMA HERE
 const sourceSchema = new Schema({
     id: { type: Number, required: true},
-    name: { type: Number, required: true},
-    email: { type: Number, required: true}
+    name: { type: String, required: true},
+    email: { type: String, required: true}
 })
 
-const sources = mongoose.model('spec_sources', YOUR_SCHEMA);
+const sources = mongoose.model('spec_sources', sourceSchema);
 
 module.exports = sources;

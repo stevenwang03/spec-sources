@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 // WRITE THE SCHEMA HERE
 const sourceSchema = new Schema({
-    id: { type: Number, required: true},
+    id: { type: String, required: true},
     name: { type: String, required: true},
     email: { type: String, required: true}
 })
 
-const sources = mongoose.model('spec_sources', sourceSchema);
+const sources = mongoose.model('sources', sourceSchema);
 
 module.exports = sources;

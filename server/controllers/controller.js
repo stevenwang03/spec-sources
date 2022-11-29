@@ -9,7 +9,7 @@ module.exports = {
         sources.find({})
         .then(sourceData => {
             console.log(sourceData);
-            res.json({"message": "OK", data: data.sources});
+            res.json({"message": "OK", data: sourceData});
         })
         .catch(err => {
             console.log(err);
@@ -20,7 +20,7 @@ module.exports = {
         sources.create(req.body.source)
         .then(sourceData => {
             console.log(sourceData);
-            res.json({"message": "OK", data: data.sources});
+            res.json({"message": "OK", data: sourceData});
         })
         .catch(err => {
             console.log(err);
@@ -31,7 +31,7 @@ module.exports = {
         sources.findOneAndDelete({id:req.params.id})
         .then(sourceData => {
             console.log(sourceData);
-            res.json({"message": "OK", data: data.sources});
+            res.json({"message": "OK", data: sourceData});
         })
         .catch(err => {
             console.log(err);

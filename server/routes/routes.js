@@ -5,8 +5,8 @@ router.route("/hello").get(controllers.hello);
 
 router.route("/sources").get(controllers.sources);
 
-router.route("/api/addSource").post(controllers.addSource);
+router.route("/addSource").post(controllers.addSource);
 
-router.route("/api/deleteSource/:id").post(controllers.deleteSource);
+router.route("/deleteSource/:id").get(controllers.deleteSource);
 
 module.exports = router;

@@ -17,7 +17,7 @@ module.exports = {
         })
     },
     addSource: (req, res) => {
-        sources.create(req.body.source)
+        sources.create(req.body)
         .then(sourceData => {
             console.log(sourceData);
             res.json({"message": "OK", data: sourceData});
